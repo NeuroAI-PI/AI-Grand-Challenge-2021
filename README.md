@@ -14,7 +14,4 @@
 ## 4. Reference
 
 
-
-
-
-## License
+## Ciatation
