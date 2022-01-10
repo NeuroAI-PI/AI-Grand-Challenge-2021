@@ -6,9 +6,11 @@
 
 ## 1. Introduction
 
-<img src="https://user-images.githubusercontent.com/51149957/148731512-847f5db6-b4d8-4731-81cc-caf58d1ea169.png" width="200" height="400"/>
+
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ 
 
 
+<p align="center"><img src="https://user-images.githubusercontent.com/51149957/148731512-847f5db6-b4d8-4731-81cc-caf58d1ea169.png" width="550" height="500"/></p>
 
 ## 2. Installation
 
@@ -16,7 +18,22 @@
 ## 3. Usage
 
 
-## 4. Reference
+
+## Citations
+
+해당 코드를 연구용으로 활용한다면, 아래와 같이 인용을 해주세요.
+
+```bibtex
+@misc{Choi2021KoreanHateSpeechRecognition,
+  author       = {Choi, Young-Seok and Kim, Jin-Hwan and Lee, Hyeon Kyu},
+  title        = {Korean Hate Speech Recognition in Social Media},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/NeuroAI-PI/AI-Grand-Challenge-2021}},
+  year         = {2021}
+}
+```
+
+## Reference
 
 
-## Ciatations
