@@ -12,10 +12,22 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/51149957/148731512-847f5db6-b4d8-4731-81cc-caf58d1ea169.png" width="550" height="500"/></p>
 
+
+
 ## 2. Installation
 
 
+
+
+
+
 ## 3. Usage
+
+
+
+
+
+
 
 
 
@@ -35,5 +47,13 @@
 ```
 
 ## Reference
+
+- [Huggingface Transformers](https://github.com/huggingface/transformers)
+- [KoELECTRA](https://github.com/monologg/KoELECTRA)
+- [KcElECTRA](https://github.com/Beomi/KcELECTRA)
+- [tunib-ELECTRA](https://github.com/tunib-ai/tunib-electra)
+- [KorBERT](https://aiopen.etri.re.kr/service_dataset.php)
+- [klue-RoBERTa](https://github.com/KLUE-benchmark/KLUE)
+
 
 
