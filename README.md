@@ -6,7 +6,7 @@
 
 ## 1. Introduction
 
-![20200813_1931_5710001](https://user-images.githubusercontent.com/51149957/148731512-847f5db6-b4d8-4731-81cc-caf58d1ea169.png)
+<img src="https://user-images.githubusercontent.com/51149957/148731512-847f5db6-b4d8-4731-81cc-caf58d1ea169.png" width="200" height="400"/>
 
 
 
