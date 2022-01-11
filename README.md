@@ -16,7 +16,7 @@
 <p align="center"><br><img src="https://user-images.githubusercontent.com/51149957/148897007-841b5e9a-f1c2-4a41-9bef-a336fd5a3c77.png"  width="700" height="350"></br></p align="center">
 <p align="center"><b>< 구축된 한국어 폭력 발화 텍스트 예시 ></b><p align="center">  
 
-제공되는 공개 SW에서는 Huggingface에서 공개된 4가지의 사전 학습 모델(KoELECTRA, KcElECTRA, tunib-ELECTRA, klue-RoBERTa)과 ETRI에서 공개된 KorBERT를 활용하여 훈련 및 테스트, 모델의 앙상블을 통한 테스트까지 활용할 수 있습니다. 해당 모델에 대한 자세한 내용은 하단의 Reference를 통해 확인할 수 있습니다. 
+제공되는 공개 SW에서는 Huggingface에 공개된 4가지의 한국어 기반 사전 학습 언어 모델(KoELECTRA, KcELECTRA, tunib-ELECTRA, KLUE-RoBERTa)과 ETRI에서 공개된 KorBERT를 활용하여 훈련 및 테스트, 모델의 앙상블을 통한 테스트까지 활용할 수 있습니다. 해당 모델에 대한 자세한 내용은 하단의 Reference를 통해 확인할 수 있습니다.
 
 
 ## 2. Installation
