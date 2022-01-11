@@ -23,11 +23,18 @@
 
 ## 3. Usage
 
+### Inference
+```
+# testing
+python run_classifier.py
+```
 
+### Training
 
-
-
-
+```
+# training
+python run_classifier.py
+```
 
 
 
