@@ -50,14 +50,15 @@ python run_classifier.py --is_training False --is_test True --is_ensemble_test T
 
 정의한 각각의 5가지의 한국어 폭력/비폭력 상황에 대해 자체적으로 구축한 100개의 Test 데이터에 대해 성능을 Macro-F1 score를 통해 평가하였습니다.
 
-                |                       | **Accuracy**<br/> | **Macro F1-score**<br/> 
-                | :-------------------- | :----------------: | :--------------------: | 
-                | KcELECTRA             |       89.59        |         87.92          |
-                | KoRBERT               |       89.03        |         86.65          |
-                | tunib-ELECTRA         |       90.06        |         87.70          |
-                | KoELECTRA-Base        |       90.33        |         87.18          |
-                | KoELECTRA-Base-v2     |       89.56        |         87.16          |
-                | KoELECTRA-Base-v3     |       90.63        |         88.11          |
+|                       | **Accuracy**<br/> | **Macro F1-score**<br/> 
+| :-------------------- | :----------------: | :--------------------: | 
+| KcELECTRA             |       79.40        |         79.56          |
+| KoRBERT               |       79.40        |         78.60          |
+| tunib-ELECTRA         |       77.20        |         76.31          |
+| KoELECTRA-Base        |       76.80        |         76.51          |
+| KoELECTRA-Base-v2     |       74.40        |         74.39          |
+| KoELECTRA-Base-v3     |       76.20        |         76.06          |
+| KRELECTRA-Base-mecab  |       78.60        |         78.36          |
 
 
 
