@@ -597,7 +597,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--train_data_name", type=str, default='train_text.xlsx')
     parser.add_argument("--augmentation_train_data_name", type=str, default='train_augmentation_list.xlsx')
-    parser.add_argument("--test_data_name", type=str, default='test_list.xlsx')
+    parser.add_argument("--test_data_name", type=str, default='test_script.xlsx')
     parser.add_argument("--openapi_key_name", type=str, default='openapi_key_list.txt')
 
     parser.add_argument("--is_training", type=str2bool, required=True, help='using training stage')
