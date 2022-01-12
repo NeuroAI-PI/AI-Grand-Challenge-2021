@@ -586,9 +586,9 @@ if __name__ == "__main__":
     parser.add_argument("--test_data_name", type=str, default='test_list.xlsx')
     parser.add_argument("--openapi_key_name", type=str, default='openapi_key_list.txt')
 
-    parser.add_argument("--is_training", type=bool, default=True)
-    parser.add_argument("--is_test", type=bool, default=True)
-    parser.add_argument("--is_ensemble_test", type=bool, default=False)
+    parser.add_argument("--is_training", type=str2bool, required=True, help='using training stage')
+    parser.add_argument("--is_test", type=str2bool, required=True, help='using test stage')
+    parser.add_argument("--is_ensemble_test", type=str2bool, required=True, help='using ensemble test stage')
     parser.add_argument("--ensemble_comb_n", type=int, default=3)
 
     args = parser.parse_args()
