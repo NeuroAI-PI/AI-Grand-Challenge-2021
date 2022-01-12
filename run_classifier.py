@@ -260,6 +260,17 @@ def save_confusion_matrix(y_label, y_pred, model_name, save_dir, normalize = 'tr
     plt.title(model_name)
     plt.savefig(save_dir+model_name+ '.png')
 
+    
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+        
 
 def main(args, model_name_list, augmentation):
     # gpu count
