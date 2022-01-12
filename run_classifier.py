@@ -600,7 +600,7 @@ if __name__ == "__main__":
                        "monologg/koelectra-base-discriminator",
                        "monologg/koelectra-base-v2-discriminator",
                        "monologg/koelectra-base-v3-discriminator",
-                       "KR_ELECTRA_base_mecab",
+                       "KRELECTRA-base-mecab",
                        ]
 
     augmentation = [0, 0.25, 0.5, 0.75, 1.0]
