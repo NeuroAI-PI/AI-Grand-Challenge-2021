@@ -29,18 +29,22 @@
 ## 3. Usage
 
 
-### Inference
-```
-# testing
-python run_classifier.py
-```
-
 ### Training
 
 ```
-# training
-python run_classifier.py
+# only training
+python run_classifier.py --is_training True --is_test False --is_ensemble_test False
 ```
+  
+  
+### Inference
+```
+# only test using single model
+python run_classifier.py --is_training False --is_test True --is_ensemble_test False
+  
+# ensemble test using multiple model
+python run_classifier.py --is_training False --is_test True --is_ensemble_test True --ensemble_comb_n <ENSEMBLE_MODEL_NUMBER>
+```  
 
 ## 4. Results
 
