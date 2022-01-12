@@ -55,6 +55,7 @@ class InputExample(object):
         self.text_b = text_b
         self.label = label
 
+
 class InputFeatures(object):
     """A single set of features of data."""
 
@@ -122,43 +123,6 @@ class PLM_Processor():
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
-
-
-def do_lang(openapi_key, text):
-    # 문어체
-    openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU"
-
-    # 구어체
-    # openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU_spoken"
-
-    requestJson = {"access_key": openapi_key, "argument": {"text": text, "analysis_code": "morp"}}
-
-    http = urllib3.PoolManager()
-    response = http.request("POST", openApiURL, headers={"Content-Type": "application/json; charset=UTF-8"},
-                            body=json.dumps(requestJson))
-
-    json_data = json.loads(response.data.decode('utf-8'))
-    json_result = json_data["result"]
-
-    if json_result == -1:
-        json_reason = json_data["reason"]
-        if "Invalid Access Key" in json_reason:
-            logger.info(json_reason)
-            logger.info("Please check the openapi access key.")
-            sys.exit()
-        return "openapi error - " + json_reason
-    else:
-        json_data = json.loads(response.data.decode('utf-8'))
-
-        json_return_obj = json_data["return_object"]
-
-        return_result = ""
-        json_sentence = json_return_obj["sentence"]
-        for json_morp in json_sentence:
-            for morp in json_morp["morp"]:
-                return_result = return_result + str(morp["lemma"]) + "/" + str(morp["type"]) + " "
-
-        return return_result
 
 
 class PLM_Dataset(Dataset):
@@ -246,6 +210,44 @@ class KorBERT_Dataset(Dataset):
         else:
             return tuple([input_ids, input_mask, segment_ids])
 
+
+def do_lang(openapi_key, text):
+    # 문어체
+    openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU"
+
+    # 구어체
+    # openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU_spoken"
+
+    requestJson = {"access_key": openapi_key, "argument": {"text": text, "analysis_code": "morp"}}
+
+    http = urllib3.PoolManager()
+    response = http.request("POST", openApiURL, headers={"Content-Type": "application/json; charset=UTF-8"},
+                            body=json.dumps(requestJson))
+
+    json_data = json.loads(response.data.decode('utf-8'))
+    json_result = json_data["result"]
+
+    if json_result == -1:
+        json_reason = json_data["reason"]
+        if "Invalid Access Key" in json_reason:
+            logger.info(json_reason)
+            logger.info("Please check the openapi access key.")
+            sys.exit()
+        return "openapi error - " + json_reason
+    else:
+        json_data = json.loads(response.data.decode('utf-8'))
+
+        json_return_obj = json_data["return_object"]
+
+        return_result = ""
+        json_sentence = json_return_obj["sentence"]
+        for json_morp in json_sentence:
+            for morp in json_morp["morp"]:
+                return_result = return_result + str(morp["lemma"]) + "/" + str(morp["type"]) + " "
+
+        return return_result
+
+
 def save_confusion_matrix(y_label, y_pred, model_name, save_dir, normalize = 'true'):
     font_path = "C:/Windows/Fonts/gulim.ttc"
     font = font_manager.FontProperties(fname=font_path).get_name()
@@ -257,6 +259,7 @@ def save_confusion_matrix(y_label, y_pred, model_name, save_dir, normalize = 'tr
     plt.xticks(rotation=20)
     plt.title(model_name)
     plt.savefig(save_dir+model_name+ '.png')
+
 
 def main(args, model_name_list, augmentation):
     # gpu count
