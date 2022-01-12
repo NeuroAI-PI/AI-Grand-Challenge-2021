@@ -82,7 +82,7 @@ python run_classifier.py --is_training False --is_test True --is_ensemble_test T
 
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
 - [KoELECTRA](https://github.com/monologg/KoELECTRA)
-- [KcElECTRA](https://github.com/Beomi/KcELECTRA)
+- [KcELECTRA](https://github.com/Beomi/KcELECTRA)
 - [tunib-ELECTRA](https://github.com/tunib-ai/tunib-electra)
 - [KorBERT](https://aiopen.etri.re.kr/service_dataset.php)
 - [klue-RoBERTa](https://github.com/KLUE-benchmark/KLUE)
