@@ -64,7 +64,7 @@ python run_classifier.py --is_training False --is_test True --is_ensemble_test T
 | KoELECTRA-Base        |       76.80        |         76.51          |
 | KoELECTRA-Base-v2     |       74.40        |         74.39          |
 | KoELECTRA-Base-v3     |       76.20        |         76.06          |
-| KRELECTRA-Base-mecab  |       78.60        |         78.36          |
+| KrELECTRA-Base-mecab  |       78.60        |         78.36          |
 
 
 
@@ -92,6 +92,6 @@ python run_classifier.py --is_training False --is_test True --is_ensemble_test T
 - [tunib-ELECTRA](https://github.com/tunib-ai/tunib-electra)
 - [KorBERT](https://aiopen.etri.re.kr/service_dataset.php)
 - [klue-RoBERTa](https://github.com/KLUE-benchmark/KLUE)
-
+- [KrELECTRA-base-mecab](https://huggingface.co/Jinhwan/krelectra-base-mecab)
 
 
