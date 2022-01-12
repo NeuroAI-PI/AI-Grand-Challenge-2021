@@ -20,7 +20,19 @@
 
 
 ## 2. Installation
-
+```
+numpy
+pandas
+tqdm
+boto3
+botocore
+requests
+sklearn
+torch>=1.7.0
+torchvision==0.9.0
+transformers==4.8.2
+  
+```
 
 
 
